@@ -1,0 +1,770 @@
+/*!
+Theme Name: daninjafx
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: daninjafx
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  color: #111111;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+blockquote {
+  margin: 0 1.5em;
+}
+
+address {
+  margin: 0 0 1.5em;
+}
+
+pre {
+  background: #eee;
+  font-family: 'Courier 10 Pitch', Courier, monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+  font-family: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+
+abbr,
+acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+
+mark,
+ins {
+  background: #fff9c0;
+  text-decoration: none;
+}
+
+big {
+  font-size: 125%;
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+}
+
+body {
+  background: #fff;
+  /* Fallback for when there is no custom background color defined. */
+}
+
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
+}
+
+ul,
+ol {
+  margin: 0 0 1.5em;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0 1.5em 1.5em;
+}
+
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
+}
+
+figure {
+  margin: 1em 0;
+  /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+.wpcf7-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 390px;
+  margin: 0px auto;
+}
+
+button,
+.button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  background-color: transparent;
+  border: 0;
+  color: #000000;
+  cursor: pointer;
+  margin: 0;
+  padding: 5px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+button:hover,
+.button:hover,
+input[type='button']:hover,
+input[type='reset']:hover,
+input[type='submit']:hover {
+  background-color: transparent;
+  border: 0;
+  color: #000000;
+}
+
+button:active,
+button:focus,
+.button:focus,
+input[type='button']:active,
+input[type='button']:focus,
+input[type='reset']:active,
+input[type='reset']:focus,
+input[type='submit']:active,
+input[type='submit']:focus {
+  background-color: transparent;
+  border: 0;
+  color: #000000;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+input[type='number'],
+input[type='tel'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='time'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='color'],
+textarea {
+  background-color: rgba(244, 243, 242, 1);
+  color: #808080;
+  border: 0px solid rgba(128, 128, 128, 1);
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+  max-width: 480px;
+  margin: 0px;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='url']:focus,
+input[type='password']:focus,
+input[type='search']:focus,
+input[type='number']:focus,
+input[type='tel']:focus,
+input[type='range']:focus,
+input[type='date']:focus,
+input[type='month']:focus,
+input[type='week']:focus,
+input[type='time']:focus,
+input[type='datetime']:focus,
+input[type='datetime-local']:focus,
+input[type='color']:focus,
+textarea:focus {
+  color: #808080;
+}
+
+select {
+  border: 0px solid rgba(128, 128, 128, 1);
+}
+
+textarea {
+  width: 100%;
+}
+
+.wpcf7-response-output {
+  border: 1px dashed #000 !important;
+  padding: 1em !important;
+  margin: 0px !important;
+}
+
+.wpcf7-not-valid-tip {
+  font-style: italic;
+  font-size: 13px !important;
+  color: #666 !important;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+a {
+  color: #000;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #000;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Custom */
+
+.container {
+  margin: auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+@media only screen and (max-width: 900px) {
+  .site-content {
+    padding-top: 60px;
+  }
+}
+
+/* Footer */
+
+.site-footer {
+  margin: 3em 0;
+  padding: 1em 0;
+  border-top: 1px solid #ccc;
+}
+
+/* Grilla */
+
+.cell {
+  margin: 0.2rem;
+  position: relative;
+}
+
+.cell img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.cell .cell-content {
+  position: relative;
+  display: block;
+}
+
+.cell .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.33s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.cell .cell-content:hover .overlay {
+  opacity: 1;
+}
+
+.cell .text {
+  color: #000;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  width: 80%;
+  opacity: 0;
+  transition: 0.33s ease-in-out;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.cell .cell-content:hover .text {
+  top: 50%;
+  opacity: 1;
+}
+
+.cell .text p {
+  font-size: 0.85rem;
+  margin-top: 0px;
+}
+
+@media screen and (min-width: 600px) {
+  .grid .alm-reveal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+  }
+  .cell {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .cell {
+    width: calc(50% - 0.4rem);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(33.3333% - 0.4rem);
+  }
+}
+
+/* error 404 */
+#not-found {
+  background: #000 url(./img/static.gif) repeat;
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#not-found h1 {
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: #000 1px 1px 1px;
+}
+
+/* entradas */
+.entry-content p {
+  max-width: 640px;
+}
+
+/* galerias */
+.wp-block-gallery.no-space {
+  margin: 8px 0px;
+}
+
+.wp-block-gallery.no-space .blocks-gallery-item {
+  margin: 0px;
+}
+
+.wp-block-image,
+.wp-block-embed {
+  margin: 1em 0 2em;
+}
+
+p + figure {
+  margin-top: 2em !important;
+}
+
+/* galerias modal */
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+  opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+  opacity: 0.95;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+/* single pagination */
+.nav-pagination {
+  display: flex;
+  margin: 3em 0 2em;
+  padding: 1em 0;
+  border-top: 1px solid #ccc;
+}
+
+.pagination-item {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: calc(100% / 3);
+}
+
+.pagination-item img {
+  width: 100px;
+  height: 100px;
+}
+
+.pagination-item strong {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.pagination-item .item-content {
+  padding: 1em;
+}
+
+.pagination-item strong {
+  display: none;
+}
+
+.all-timeline {
+  flex-grow: 1;
+  justify-content: center;
+  text-align: center;
+}
+
+.next-timeline {
+  justify-content: flex-end;
+  order: 3;
+}
+
+@media only screen and (min-width: 900px) {
+  a.pagination-item {
+    opacity: 0.4;
+    transition: opacity 0.33s ease 0s;
+  }
+
+  a.pagination-item:hover {
+    opacity: 1;
+  }
+
+  .pagination-item strong {
+    display: inherit;
+  }
+}
+
+/* paginas */
+.section-page {
+}
+
+.one_third {
+  flex-grow: 1;
+}
+
+.two_third {
+  flex-grow: 3;
+}
+
+@media only screen and (max-width: 900px) {
+  .one_third .wp-block-image.is-resized {
+    margin: 0px auto 1em;
+  }
+
+  .wp-block-columns {
+    flex-direction: column;
+  }
+}
+
+.framed img {
+  display: inline-block;
+  border-radius: 500px;
+}
+
+/* Flickr Photos 
+.flickr-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  grid-auto-flow: dense;
+  padding: 10px;
+}
+*/
+
+.flickr-item a {
+  display: block;
+  padding: 1rem;
+}
+
+.flickr-footer {
+  display: block;
+  margin: 2em 1em 1em;
+  text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .flickr-item {
+    width: calc(100% / 1);
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 899px) {
+  .flickr-item {
+    width: calc(100% / 2);
+  }
+}
+@media only screen and (min-width: 900px) {
+  .flickr-item {
+    width: calc(100% / 3);
+  }
+}
+
+/* Main menu */
+
+.site-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2em 0 2em 0.4em;
+}
+
+@media only screen and (max-width: 900px) {
+  .site-header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background: #fff;
+    padding: 0.5em 1.2em;
+    z-index: 10;
+  }
+}
+
+/* Brand */
+.brand a {
+  text-decoration: none;
+}
+
+.brand-logo {
+  max-height: 48px;
+}
+
+@media only screen and (max-width: 900px) {
+  .brand {
+    flex-grow: 1;
+  }
+
+  .brand-logo {
+    max-height: 32px;
+  }
+}
+
+/* Nav */
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nav-toggle {
+  text-align: right;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.nav-primary {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav-item {
+  font-weight: 700;
+}
+
+.nav-item.icon {
+  font-weight: 200;
+  font-size: 1.1rem;
+  position: relative;
+  top: -1px;
+}
+
+.nav-item.icon a {
+  padding: 0.5rem;
+}
+
+.nav-item.icon a,
+.current-menu-item a {
+  color: #000;
+}
+
+.nav-link {
+  color: #afafaf;
+  transition: color 0.4s ease 0s;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .nav-menu {
+    display: none;
+
+    position: absolute;
+    top: 68px;
+    left: 0px;
+    right: 0px;
+    background: white;
+  }
+
+  .nav-open .nav-menu {
+    display: flex;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 0.5em 1.2em;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .nav {
+    flex-grow: 1;
+  }
+
+  .nav-menu,
+  .nav-menu ul {
+    flex-direction: row;
+  }
+
+  .nav-primary {
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+}
+
+.is-type-video {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.cine {
+  padding: 2em 0;
+  background-color: #eee;
+}
+
+.cine.black {
+  background-color: #000;
+}
+
+.cine.white {
+  background-color: #fff;
+}

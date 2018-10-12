@@ -1,0 +1,99 @@
+# Translation of Plugins - Gutenberg - Development (trunk) in Spanish (Argentina)
+# This file is distributed under the same license as the Plugins - Gutenberg - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-07-20 01:48:19+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: es_AR\n"
+"Project-Id-Version: Plugins - Gutenberg - Development (trunk)\n"
+
+#: lib/init-checks.php:19
+msgid "Gutenberg requires WordPress 4.8 or later to function properly. Please upgrade WordPress before activating Gutenberg."
+msgstr "Gutenberg require WordPress 4.8 o posterior para funcionar apropiadamente. Por favor actualizá antes de activar Gutenberg."
+
+#: lib/client-assets.php:352
+msgid "Unauthorized post type."
+msgstr "Tipo de entrada no autorizado."
+
+#: lib/client-assets.php:348
+msgid "Unrecognized post type."
+msgstr "Tipo de entrada no reconocido."
+
+#: lib/client-assets.php:343
+msgid "Post not found."
+msgstr "Entrada no hallada."
+
+#: lib/register.php:47 lib/register.php:48
+msgid "New Post"
+msgstr "Nueva entrada"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/WordPress/gutenberg"
+msgstr "https://github.com/WordPress/gutenberg"
+
+#. #-#-#-#-#  gutenberg-code.pot (Gutenberg 0.5.0)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: lib/register.php:105
+msgid "Gutenberg"
+msgstr "Gutenberg"
+
+#. translators: %s: post title
+#: lib/register.php:102
+msgid "Edit &#8220;%s&#8221; in the Gutenberg editor"
+msgstr "Editar &#8220;%s&#8221; en el editor Gutenberg"
+
+#: lib/register.php:56 lib/register.php:57
+msgid "Demo"
+msgstr "Demostración"
+
+#. translators: %s: duration
+#: lib/client-assets.php:70
+msgid "%s from now"
+msgstr "%s desde ahora"
+
+#. translators: %s: duration
+#: lib/client-assets.php:72
+msgid "%s ago"
+msgstr "Hace %s"
+
+#. Description of the plugin/theme
+msgid "Printing since 1440. This is the development plugin for the new block editor in core. <strong>Meant for development, do not run on real sites.</strong>"
+msgstr "Imprimiendo desde 1440. Este es el plugin de desarrollo para el nuevo editor de bloque en el núcleo. <strong>Indicado para desarrollo, no para sitios reales.</strong>"
+
+#. Author of the plugin/theme
+msgid "Gutenberg Team"
+msgstr "El equipo de Gutenberg"
+
+#: lib/client-assets.php:78
+msgid "F j, Y g:i a"
+msgstr "j \\d\\e F, Y g:i a"
+
+#: lib/client-assets.php:77
+msgid "F j, Y"
+msgstr "j \\d\\e F, Y"
+
+#: lib/client-assets.php:76
+msgid "g:i a"
+msgstr "g:i a"
+
+#: lib/blocks.php:33
+msgid "Block names must contain a namespace prefix. Example: my-plugin/my-custom-block"
+msgstr "Los nombres de los bloques deben contener un prefijo para el espacio de nombre. Por ejemplo: mi-plugin/mi-bloque-personalizado"
+
+#: lib/blocks.php:26
+msgid "Block names must be strings."
+msgstr "Los nombres de los bloques deben ser cadenas de texto."
+
+#. translators: 1: block name
+#: lib/blocks.php:62
+msgid "Block \"%s\" is not registered."
+msgstr "El bloque «%s» no está registrado."
+
+#. translators: 1: block name
+#: lib/blocks.php:40
+msgid "Block \"%s\" is already registered."
+msgstr "El bloque «%s» ya está registrado."
