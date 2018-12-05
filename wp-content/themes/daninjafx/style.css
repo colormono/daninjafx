@@ -262,6 +262,22 @@ textarea:focus {
   color: #808080;
 }
 
+.button.button-primary:active,
+.button.button-primary:focus,
+.button.button-primary:hover {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.button.button-primary:active,
+.button.button-primary:focus,
+.button.button-primary:hover {
+  background-color: #111111;
+  color: #ffffff;
+}
+
 select {
   border: 0px solid rgba(128, 128, 128, 1);
 }
@@ -649,13 +665,14 @@ p + figure {
   max-height: 48px;
 }
 
+.custom-logo {
+  height: 32px;
+  width: auto;
+}
+
 @media only screen and (max-width: 900px) {
   .brand {
     flex-grow: 1;
-  }
-
-  .brand-logo {
-    max-height: 32px;
   }
 }
 

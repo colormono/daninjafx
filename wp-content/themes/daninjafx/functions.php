@@ -117,7 +117,7 @@ function daninjafx_scripts() {
 	wp_enqueue_script( 'masonry-script', get_template_directory_uri() . '/js/masonry/masonry.pkgd.min.js', array(), '2018', true );
 	wp_enqueue_script( 'imgloaded-script', get_template_directory_uri() . '/js/masonry/imagesloaded.pkgd.min.js', array(), '2018', true );
 	wp_enqueue_script( 'plyr-script', get_template_directory_uri() . '/js/plyr/plyr.js', array(), '2018', true );
-	wp_enqueue_script( 'daninjafx-app', get_template_directory_uri() . '/js/app.js', array(), '2018', true );
+	wp_enqueue_script( 'daninjafx-app', get_template_directory_uri() . '/js/app.js', array(), '2018-12', true );
 }
 add_action( 'wp_enqueue_scripts', 'daninjafx_scripts' );
 

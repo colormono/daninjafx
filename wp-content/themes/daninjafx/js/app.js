@@ -16,11 +16,13 @@ $(document).ready(function() {
    * CUSTOM VIDEO PLAYER
    * https://github.com/sampotts/plyr
    */
-  const player = new Plyr(
-    document.querySelectorAll(
-      '.wp-block-embed.is-type-video .wp-block-embed__wrapper'
-    )
-  );
+  if (window.innerWidth > 720) {
+    const player = new Plyr(
+      document.querySelectorAll(
+        '.wp-block-embed.is-type-video .wp-block-embed__wrapper'
+      )
+    );
+  }
 
   /**
    * MODAL GALLERIES
